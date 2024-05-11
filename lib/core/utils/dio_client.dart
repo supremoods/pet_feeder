@@ -1,6 +1,6 @@
 import "package:dio/dio.dart";
 
-bool isLocal = true;
+bool isLocal = false;
 String baseUrl = isLocal ? "http://192.168.68.118:5000" : "https://pet-feeder-service.onrender.com";
 
 final petFeederUrl = Dio(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const primaryColor = Colors.orange;
+const primaryColor = Color.fromARGB(255, 255, 36, 156);
 const dangerColor = Colors.red;
 const secondaryColor = Colors.white;
 const successColor = Color(0xff03fc5e);

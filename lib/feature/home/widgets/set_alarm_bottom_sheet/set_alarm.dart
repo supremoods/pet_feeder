@@ -170,6 +170,7 @@ class _SetAlarmState extends ConsumerState<SetAlarm> {
                   brightness: Brightness.dark
                 ),
                 child: CupertinoDatePicker(
+                  initialDateTime: widget.action == ActionType.edit ? ref.watch(selectedSchedule)!.time!.toLocal() : DateTime.now(),
                   onDateTimeChanged: (DateTime value) {
                     debugPrint(value.toString());
                     setState(() {
